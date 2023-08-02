@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:p="http://www.springframework.org/schema/p"
+
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+       http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+
+       http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+">
+
+
+    <bean class="com.atguigu.springcloud.bean.User" id="user" p:name="宙斯" p:sex="男" p:age="22"></bean>
+    <bean class="com.atguigu.springcloud.bean.User" id="user2" p:name="小明" p:sex="男"></bean>
+    <bean class="com.atguigu.springcloud.bean.People" id="people" p:user-ref="user2"></bean>
+</beans>
